@@ -9,6 +9,7 @@ import { AssetsModule } from './assets/assets.module';
 import { DatabaseStartupService } from './database/database-startup.service';
 import { LocationEntity } from './entities/location.entity';
 import { AssetEntity } from './entities/asset.entity';
+import { ChatModule } from './chat/chat.module';
 
 @Module({
   imports: [
@@ -33,6 +34,7 @@ import { AssetEntity } from './entities/asset.entity';
     ScheduleModule.forRoot(),
     RepositoryModule,
     AssetsModule,
+    ChatModule,
   ],
   controllers: [AppController],
   providers: [AppService, DatabaseStartupService],
